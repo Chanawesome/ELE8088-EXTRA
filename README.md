@@ -41,3 +41,4 @@ be marked.
 (ix) Any questions received less than 72 hours before the deadline will not be answered.
 
 (x) Last, but not least, read carefully the document “how to write a good technical report.”
+is [available here](https://canvas.qub.ac.uk/courses/16077/files/2905137?wrap=1)
