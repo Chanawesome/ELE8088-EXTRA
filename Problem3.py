@@ -18,14 +18,15 @@ mpl.rcParams['text.usetex'] = True  # 全局开启
 mpl.rcParams['font.family'] = 'Times New Roman'  # 指定字体
 figsize(9, 6)
 
-A = np.array([[0.5,0.8],[-1.5,0.2]])
-x_0 = np.array([[0.5], [0.5]])
-x_i_list = [None] * 51
+# A = np.array([[0.5,0.8],[-1.5,0.2]])
+A = np.array([[0.2,-1.5],[0.4,1.5]])
+x_0 = np.array([[0.9], [0]])
+x_i_list = [None] * 101
 x_i_list[0] = x_0
 x_1_list = [x_0[0, 0]]
 x_2_list = [x_0[1, 0]]
 y_i_list = [0]
-for i in range(50):
+for i in range(100):
     x_i_list[i+1] = A @ x_i_list[i]
     x_1_list.append(x_i_list[i + 1][0, 0])
     x_2_list.append(x_i_list[i + 1][1, 0])
